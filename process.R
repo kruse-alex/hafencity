@@ -3,7 +3,7 @@ require(tidyverse)
 setwd("C:/Users/akruse/Downloads/LoD1-DE_HH_2017-03-23/")
 filenames = list.files(pattern = ".xml")
 
-for (i in 247:length(filenames)) {
+for (i in 303:length(filenames)) {
   thefile = filenames[i]
   g = ogrListLayers(thefile)
   g = readOGR(thefile,g[1])
@@ -32,9 +32,11 @@ leaflet(spgeo) %>%
   addPolygons()
   
   
- LoD1_560_5944_1_HH.xml
+LoD1_560_5944_1_HH.xml
 LoD1_562_5930_1_HH.xml
 LoD1_562_5931_1_HH.xml
 LoD1_563_5930_1_HH.xml
 LoD1_563_5931_1_HH.xml
 LoD1_563_5932_1_HH.xml
+LoD1_564_5931_1_HH.xml
+LoD1_564_5932_1_HH.xml
